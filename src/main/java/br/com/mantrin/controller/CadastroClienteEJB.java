@@ -14,6 +14,7 @@ public class CadastroClienteEJB {
 	@PersistenceContext(unitName="projetoJbossPU")
 	private EntityManager em;
 	
+	
 	public void salvar(Cliente cliente) {
 		em.persist(cliente);
 	}
